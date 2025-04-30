@@ -8,6 +8,8 @@ let fromLowtoHigh = document.querySelector('.fromLowtoHigh');
 let menuData = []; 
 
 
+
+
 document.addEventListener('DOMContentLoaded', async function() {
   let response = await getAllMenu();
   menuData = response.data;
@@ -56,11 +58,25 @@ function renderMenu(arr) {
           <div class="mt-4 flex items-center justify-between">
             <span class="text-sm text-gray-400">Ready in ${m.preparationTime} min</span>
             <button class="p-3 bg-green-500 hover:bg-green-600 text-white rounded-full text-2xl shadow-md transition-all">
-              <ion-icon name="basket-outline"></ion-icon>
-            </button>
+                <ion-icon name="basket-outline"></ion-icon>
+                ${m.available? 'Add' : 'unavailable'}
+              </button>
           </div>
         </div>
       </div>
     `;
   });
 }
+
+function createPost(title, content) {
+    return {
+      id: Date.now(),
+      title,
+      content,
+      createdAt: new Date().toISOString()
+    };
+  }
+  
+  const newPost = createPost("Hello", "This is my first post");
+  console.log(newPost.title); // Hello
+  

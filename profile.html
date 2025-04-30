@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- favocon -->
+    
+    <link rel="icon" type="favicon" href="./public/favicon.ico" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Restaurant Home</title>
+  </head>
+  <body>
+   <header class="w-[100%] bg-red-800 h-[120px] flex justify-between">
+    <div class="container w-[80%] m-auto">
+      <div class="headerWrapper flex justify-between items-center text-white">
+       <div class="logo"> 
+        <a href="./index.html">
+          <img class="w-[50px] h-[50px]" src="./public/restoran-duzgun.gif" alt="">
+        </a>
+       </div>
+       <div class="headerMenu flex text-2xl gap-4">
+        <a href="./home.html">
+          <ion-icon title="home" name="home-outline"></ion-icon>
+        </a>
+        <a href="./menu.html">
+          <ion-icon title="menu" name="fast-food-outline"></ion-icon>
+        </a>
+        <a href="./about.html">
+          <ion-icon title="about" name="restaurant-outline"></ion-icon>
+        </a>
+        <a href="./contact.html">
+          <ion-icon title="contact" name="call-outline"></ion-icon>
+        </a>
+        <a href="./login.html">
+          <ion-icon title="log-In" name="log-in-outline"></ion-icon>
+        </a>
+        <a href="./register.html">
+          <ion-icon title="Register" name="person-add-outline"></ion-icon>
+        </a>
+       </div>
+      </div>
+    </div>
+   </header>
+   <main>
+   <section>
+    <div class="container w-[80%]">
+        <div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md space-y-8">
+
+            <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
+              <img class="w-24 h-24 rounded-full border-4 border-indigo-500" src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="Profile Image">
+              <div>
+                <h1 class="text-2xl font-bold text-gray-800">John Doe</h1>
+                <p class="text-gray-500">Client</p>
+                <p class="text-sm text-gray-400">Member</p>
+                <div class="mt-4 flex gap-3">
+                  <button class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">Update Info</button>
+                  <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Update Password</button>
+                </div>
+              </div>
+            </div>
+          
+    
+            <div class="flex items-center justify-between border-t pt-4">
+              <p class="text-lg font-semibold text-gray-700">Balance: <span class="text-indigo-600">$120.00</span></p>
+              <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">Add Balance</button>
+            </div>
+          
+    
+            <div class="border-t pt-4 space-y-2">
+              <h2 class="text-xl font-semibold text-gray-800">Contact Info</h2>
+              <p class="text-gray-600">Email: john@example.com</p>
+              <p class="text-gray-600">Phone: (123) 456-7890</p>
+              <p class="text-gray-600">Address: 123 Main St, City, Country</p>
+            </div>
+          
+        
+            <div class="border-t pt-6">
+              <h2 class="text-2xl font-bold text-gray-800 mb-4">Order History</h2>
+              <div class="overflow-x-auto">
+                <table class="min-w-full bg-white text-left border border-gray-200 rounded-lg overflow-hidden">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th class="px-4 py-3 border-b">Order ID</th>
+                      <th class="px-4 py-3 border-b">Items</th>
+                      <th class="px-4 py-3 border-b">Total</th>
+                      <th class="px-4 py-3 border-b">Status</th>
+                      <th class="px-4 py-3 border-b">Date</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y">
+                    <tr>
+                      <td class="px-4 py-3">#1023</td>
+                      <td class="px-4 py-3">2x Gamepad, 1x Controller</td>
+                      <td class="px-4 py-3">$85.00</td>
+                      <td class="px-4 py-3 text-green-600 font-medium">Delivered</td>
+                      <td class="px-4 py-3">2025-04-28</td>
+                    </tr>
+                    <tr>
+                      <td class="px-4 py-3">#1022</td>
+                      <td class="px-4 py-3">1x Headset</td>
+                      <td class="px-4 py-3">$45.00</td>
+                      <td class="px-4 py-3 text-yellow-600 font-medium">Pending</td>
+                      <td class="px-4 py-3">2025-04-25</td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+   </section>
+   </main>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
