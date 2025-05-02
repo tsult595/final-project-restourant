@@ -9,6 +9,6 @@ export class Menu{
        this.preparationTime = preparationTime
        this.price = price
        this.reviews = []
-       this.createAt = new Date.now()
+       this.createAt = new Date()
     }
 }

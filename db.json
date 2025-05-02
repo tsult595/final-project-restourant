@@ -1,199 +1,259 @@
 {
-    "users": [
-      {
-        "id": "1",
-        "username": "johndoe",
-        "fullName": "John Doe",
-        "balance": 250,
-        "email": "john.doe@example.com",
-        "role": "client",
-        "phoneNumber": "123-456-7890",
-        "address": {
-          "country": "United States",
-          "city": "New York",
-          "street": "123 Main Street"
-        },
-        "basketItems": [],
-        "profileImage": "https://randomuser.me/api/portraits/men/32.jpg",
-        "password": "client123",
-        "createdAt": "2025-04-28T10:00:00Z",
-        "lastLogin": "2025-04-28T12:00:00Z"
-      },
-      {
-        "id": "2",
-        "username": "adminuser",
-        "fullName": "Alice Smith",
-        "balance": 1000,
-        "email": "alice.smith@example.com",
-        "role": "admin",
-        "phoneNumber": "987-654-3210",
-        "address": {
-          "country": "United Kingdom",
-          "city": "London",
-          "street": "45 King Street"
-        },
-        "basketItems": [],
-        "profileImage": "https://randomuser.me/api/portraits/women/44.jpg",
-        "password": "admin123",
-        "createdAt": "2025-01-15T08:30:00Z",
-        "lastLogin": "2025-04-27T18:45:00Z"
-      }
-    ],
-    "menu": [
-      {
-        "id": 1,
-        "title": "Margherita Pizza",
-        "ingredients": ["Tomato Sauce", "Mozzarella", "Basil"],
-        "country": "Italy",
-        "image": "https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg",
-        "category": "Pizza",
-        "available": true,
-        "preparationTime": 15,
-        "price": 12.99,
-        "reviews": [
-          
-            
-          
-        ],
-        "createdAt" : "2025-01-15T08:30:00Z"
-      },
-      {
-        "id": 2,
-        "title": "Sushi Platter",
-        "ingredients": ["Rice", "Fish", "Seaweed"],
-        "country": "Japan",
-        "image": "https://int.japanesetaste.com/cdn/shop/articles/how-to-make-makizushi-sushi-rolls-japanese-taste.jpg?v=1707914944&width=5760",
-        "category": "Sushi",
-        "available": true,
-        "preparationTime": 25,
-        "price": 24.50,
-        "reviews": [],
-        "createdAt" : "2025-01-15T08:30:00Z"
-      },
-      {
-        "id": 3,
-        "title": "Cheeseburger",
-        "ingredients": ["Beef Patty", "Cheddar Cheese", "Lettuce", "Tomato", "Bun"],
+  "users": [
+    {
+      "id": "1",
+      "username": "johndoe",
+      "fullName": "John Doe",
+      "balance": 250,
+      "email": "john.doe@example.com",
+      "role": "client",
+      "phoneNumber": "123-456-7890",
+      "address": {
         "country": "United States",
-        "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
-        "category": "Burger",
-        "available": false,
-        "preparationTime": 10,
-        "price": 9.99,
-        "reviews": [
-         
-        ],
-        "createdAt" :"2025-04-28T12:00:00Z"
+        "city": "New York",
+        "street": "123 Main Street"
       },
-      {
-        "id": 4,
-        "title": "Pad Thai",
-        "ingredients": ["Rice Noodles", "Shrimp", "Peanuts", "Egg", "Bean Sprouts"],
-        "country": "Thailand",
-        "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2024-04-pad-thai-190%2Fpad-thai-190-251",
-        "category": "Noodles",
-        "available": true,
-        "preparationTime": 20,
-        "price": 14.50,
-        "reviews": [
-         
-        ],
-      "createdAt" :"2025-04-28T14:00:00Z"
+      "basketItems": [],
+      "profileImage": "https://randomuser.me/api/portraits/men/32.jpg",
+      "password": "client123",
+      "createdAt": "2025-04-28T10:00:00Z",
+      "lastLogin": "2025-04-28T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "username": "adminuser",
+      "fullName": "Alice Smith",
+      "balance": 1000,
+      "email": "alice.smith@example.com",
+      "role": "admin",
+      "phoneNumber": "987-654-3210",
+      "address": {
+        "country": "United Kingdom",
+        "city": "London",
+        "street": "45 King Street"
+      },
+      "basketItems": [],
+      "profileImage": "https://randomuser.me/api/portraits/women/44.jpg",
+      "password": "admin123",
+      "createdAt": "2025-01-15T08:30:00Z",
+      "lastLogin": "2025-04-27T18:45:00Z"
+    },
+    {
+      "id": "4fd78713-8ba1-4de9-ba5e-df8d3e9e5eee",
+      "userName": "johndoe",
+      "fullName": "user@example.com",
+      "balance": 0,
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "fsfsfs",
+      "createdAt": "2025-05-01T22:03:18.186Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
       }
-    ],
-    "reservations": [
-      {
-        "id": 1,
-        "fullName": "Johnny Depp",
-        "phoneNumber": "+1-555-556-6666",
-        "date": "2025-05-01",
-        "time": "19:00",
-        "numberOfGuests": 2,
-        "specialRequest": "Window seat if possible",
-        "status": "Pending",
-        "createdAt": "2025-04-28T13:00:00Z"
-      },
-      {
-        "id": 2,
-        "fullName": "Emily Willis",
-        "phoneNumber": "+1-558-888-8888",
-        "date": "2025-06-01",
-        "time": "18:00",
-        "numberOfGuests": 5,
-        "specialRequest": "Birthday celebration",
-        "status": "Pending",
-        "createdAt": "2025-04-28T14:00:00Z"
+    },
+    {
+      "id": "6d8d6189-8788-42e0-b948-0d00e7f25528",
+      "userName": "bbc",
+      "fullName": "user@example.com",
+      "balance": 0,
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "ddsvddf",
+      "createdAt": "2025-05-01T22:07:38.301Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
       }
-    ],
-    "messages": [
-      {
-        "id": 1,
-        "fullName": "John Doe",
-        "email": "john.doe@example.com",
-        "message": "Can I reserve a table for Saturday evening?",
-        "isRead": false,
-        "subject": "Reservation inquiry"
-      },
-      {
-        "id": 2,
-        "fullName": "Johnny Depp",
-        "email": "johnny.depp@example.com",
-        "message": "I'd like a private room please.",
-        "isRead": true,
-        "subject": "Private room request"
-      },
-      {
-        "id": 3,
-        "fullName": "John Tower",
-        "email": "john.tower@example.com",
-        "message": "What vegan options do you have?",
-        "isRead": true,
-        "subject": "Menu question"
-      }
-    ],
-    "orders": [
-      {
-        "id": 1,
-        "userId": "1",
-        "items": [
-          {
-            "menuId": 3,
-            "title": "Cheeseburger",
-            "quantity": 1,
-            "price": 9.99
-          },
-          {
-            "menuId": 1,
-            "title": "Margherita Pizza",
-            "quantity": 2,
-            "price": 12.99
-          }
-        ],
-        "totalPrice": 35.97,
-        "orderDate": "2025-04-28T12:30:00Z",
-        "status": "Pending",
-        "createdAt": "2025-04-28T12:00:00Z"
-      }
-    ],
-    "coupons": [
-      {
-        "id": 1,
-        "name": "Silver",
-        "discount": 40,
-        "usedBy": ["2", "6", "10"]
-      },
-      {
-        "id": 2,
-        "name": "Gold",
-        "discount": 50,
-        "usedBy": ["1", "4"]
-      },
-      {
-        "id": 3,
-        "name": "Diamond",
-        "discount": 75,
-        "usedBy": ["5"]
-      }
-    ]
-  }
-  
+    }
+  ],
+  "menu": [
+    {
+      "id": "1",
+      "title": "Margherita Pizza",
+      "ingredients": [
+        "Tomato Sauce",
+        "Mozzarella",
+        "Basil"
+      ],
+      "country": "Italy",
+      "image": "https://safrescobaldistatic.blob.core.windows.net/media/2022/11/PIZZA-MARGHERITA.jpg",
+      "category": "Pizza",
+      "available": true,
+      "preparationTime": 15,
+      "price": 12.99,
+      "reviews": [],
+      "createdAt": "2025-01-15T08:30:00Z"
+    },
+    {
+      "id": "2",
+      "title": "Sushi Platter",
+      "ingredients": [
+        "Rice",
+        "Fish",
+        "Seaweed"
+      ],
+      "country": "Japan",
+      "image": "https://int.japanesetaste.com/cdn/shop/articles/how-to-make-makizushi-sushi-rolls-japanese-taste.jpg?v=1707914944&width=5760",
+      "category": "Sushi",
+      "available": true,
+      "preparationTime": 25,
+      "price": 24.5,
+      "reviews": [],
+      "createdAt": "2025-01-15T08:30:00Z"
+    },
+    {
+      "id": "3",
+      "title": "Cheeseburger",
+      "ingredients": [
+        "Beef Patty",
+        "Cheddar Cheese",
+        "Lettuce",
+        "Tomato",
+        "Bun"
+      ],
+      "country": "United States",
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349",
+      "category": "Burger",
+      "available": false,
+      "preparationTime": 10,
+      "price": 9.99,
+      "reviews": [],
+      "createdAt": "2025-04-28T12:00:00Z"
+    },
+    {
+      "id": "4",
+      "title": "Pad Thai",
+      "ingredients": [
+        "Rice Noodles",
+        "Shrimp",
+        "Peanuts",
+        "Egg",
+        "Bean Sprouts"
+      ],
+      "country": "Thailand",
+      "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipes%2F2024-04-pad-thai-190%2Fpad-thai-190-251",
+      "category": "Noodles",
+      "available": true,
+      "preparationTime": 20,
+      "price": 14.5,
+      "reviews": [],
+      "createdAt": "2025-04-28T14:00:00Z"
+    }
+  ],
+  "reservations": [
+    {
+      "id": "1",
+      "fullName": "Johnny Depp",
+      "phoneNumber": "+1-555-556-6666",
+      "date": "2025-05-01",
+      "time": "19:00",
+      "numberOfGuests": 2,
+      "specialRequest": "Window seat if possible",
+      "status": "Pending",
+      "createdAt": "2025-04-28T13:00:00Z"
+    },
+    {
+      "id": "2",
+      "fullName": "Emily Willis",
+      "phoneNumber": "+1-558-888-8888",
+      "date": "2025-06-01",
+      "time": "18:00",
+      "numberOfGuests": 5,
+      "specialRequest": "Birthday celebration",
+      "status": "Pending",
+      "createdAt": "2025-04-28T14:00:00Z"
+    }
+  ],
+  "messages": [
+    {
+      "id": "1",
+      "fullName": "John Doe",
+      "email": "john.doe@example.com",
+      "message": "Can I reserve a table for Saturday evening?",
+      "isRead": false,
+      "subject": "Reservation inquiry"
+    },
+    {
+      "id": "2",
+      "fullName": "Johnny Depp",
+      "email": "johnny.depp@example.com",
+      "message": "I'd like a private room please.",
+      "isRead": true,
+      "subject": "Private room request"
+    },
+    {
+      "id": "3",
+      "fullName": "John Tower",
+      "email": "john.tower@example.com",
+      "message": "What vegan options do you have?",
+      "isRead": true,
+      "subject": "Menu question"
+    }
+  ],
+  "orders": [
+    {
+      "id": "1",
+      "userId": "1",
+      "items": [
+        {
+          "menuId": 3,
+          "title": "Cheeseburger",
+          "quantity": 1,
+          "price": 9.99
+        },
+        {
+          "menuId": 1,
+          "title": "Margherita Pizza",
+          "quantity": 2,
+          "price": 12.99
+        }
+      ],
+      "totalPrice": 35.97,
+      "orderDate": "2025-04-28T12:30:00Z",
+      "status": "Pending",
+      "createdAt": "2025-04-28T12:00:00Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "1",
+      "name": "Silver",
+      "discount": 40,
+      "usedBy": [
+        "2",
+        "6",
+        "10"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Gold",
+      "discount": 50,
+      "usedBy": [
+        "1",
+        "4"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Diamond",
+      "discount": 75,
+      "usedBy": [
+        "5"
+      ]
+    }
+  ]
+}
