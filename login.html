@@ -46,35 +46,36 @@
     </div>
    </header>
    <main>
-    <section>
-        <div class="max-w-md mx-auto mt-12 p-6 bg-white shadow-xl rounded-2xl">
-            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login</h2>
-            <form id="login-form" class="space-y-5">
-              <!-- Email -->
-              <div>
-                <label for="email" class="block mb-1 text-gray-700 font-medium">Email</label>
-                <input type="email" id="email" name="email" required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-              </div>
-          
-              <!-- Password -->
-              <div>
-                <label for="password" class="block mb-1 text-gray-700 font-medium">Password</label>
-                <input type="password" id="password" name="password" required
-                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
-              </div>
-          
-              <!-- Submit Button -->
-              <div class="text-center">
-                <button type="submit"
-                  class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg transition-all duration-300 shadow-md">
-                  Login
-                </button>
-              </div>
-            </form>
+    <main class="relative">
+
+      <form id="form123"  class=" absolute left-145 top-30 w-full max-w-xl  bg-white shadow-xl rounded-lg p-2">
+
+          <h2 class="text-4xl text-red-800 text-center font-bold mt-10"> Login to Your Account</h2>
+
+          <p class="text-center text-2xl pt-8 text-gray-800">Please enter your credentials to continue.</p>
+
+          <div class="flex flex-col">
+              <label for="email"
+                  class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Email</label>
+              <input type="email" id="email" name="email"
+                  class="bg-gray-50 border w-full text-md text-blue-950 border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Enter your email" required />
           </div>
-          
-    </section>
+          <div class=" flex flex-col">
+              <label for="password" class=" mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Password</label>
+              <input type="password" id="password" name="password"
+                  class="bg-gray-50 border pr-50 text-md text-blue-950 border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  placeholder="Enter your your password" required />
+              <span class="text-md text-red-700 ml-105 mt-5">Forgot Password?</span>
+          </div>
+          <button type="submit"
+              class="text-white  mb-10 mt-7 ml-60 bg-red-900 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-9 py-3 text-center">Login</button>
+          <span class="absolute left-35 bottom-2">Don't have an account? <span class="text-red-600">Create one
+                  now</span></span>
+      </form>
+
+      </div>
+  </main>
    </main>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

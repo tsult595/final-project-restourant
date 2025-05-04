@@ -1,41 +1,43 @@
 import { v4 as uuidv4 } from 'uuid';
-
-
 export class User{
     id;
-    userName;
-    fullName
-    balance
-    email
+    username;
+    fullName;
+    balance;
+    email;
     role;
     phoneNumber;
-    basketItems;
+    basket;
     profileImage;
     isBanned;
     banDate;
     password;
     createdAt;
     lastLogin;
+    address;
 
-    constructor(userName, fullName, password){
-        this.id = uuidv4()
-        this.userName = userName
-        this.fullName = fullName
-        this.password = password
-        this.balance = 0
-        this.role = 'client'
-        this.phoneNumber = ''
-        this.address = {
-            country : '',
-            city : '',
-            street : ''
-        }
-        this.basketItems = '',
-        this.profileImage = 'https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg',
-        this.createdAt = new Date()
-        this.isBanned = false
-        this.banDate = null
-        this.lastLogin = null
 
-    }
+constructor(username, email, fullName, password ){
+this.id=uuidv4()
+this.username=username;
+this.email=email;
+this.fullName=fullName;
+this.password=password;
+this.role="client";
+this.phoneNumber=""
+this.balance=0;
+this.address ={
+country:"",
+city:"",
+street:""
+};
+this.basket=[];
+this.profileImage="https://thumbs.dreamstime.com/b/default-avatar-profile-icon-vector-social-media-user-image-182145777.jpg"
+this.createdAt= new Date();
+this.isBanned= false;
+this.banDate=null;
+this.lastLogin= null;
+
+}
+
 }

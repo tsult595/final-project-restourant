@@ -46,76 +46,81 @@
     </div>
    </header>
    <main>
-   <section>
-    <div class="container w-[80%]">
-        <div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-2xl shadow-md space-y-8">
 
-            <div class="flex flex-col md:flex-row gap-6 items-start md:items-center">
-              <img class="w-24 h-24 rounded-full border-4 border-indigo-500" src="https://cdn-icons-png.flaticon.com/512/219/219986.png" alt="Profile Image">
-              <div>
-                <h1 class="text-2xl font-bold text-gray-800">John Doe</h1>
-                <p class="text-gray-500">Client</p>
-                <p class="text-sm text-gray-400">Member</p>
-                <div class="mt-4 flex gap-3">
-                  <button class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition">Update Info</button>
-                  <button class="px-4 py-2 bg-gray-200 text-gray-800 rounded-md hover:bg-gray-300 transition">Update Password</button>
-                </div>
-              </div>
-            </div>
-          
-    
-            <div class="flex items-center justify-between border-t pt-4">
-              <p class="text-lg font-semibold text-gray-700">Balance: <span class="text-indigo-600">$120.00</span></p>
-              <button class="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition">Add Balance</button>
-            </div>
-          
-    
-            <div class="border-t pt-4 space-y-2">
-              <h2 class="text-xl font-semibold text-gray-800">Contact Info</h2>
-              <p class="text-gray-600">Email: john@example.com</p>
-              <p class="text-gray-600">Phone: (123) 456-7890</p>
-              <p class="text-gray-600">Address: 123 Main St, City, Country</p>
-            </div>
-          
-        
-            <div class="border-t pt-6">
-              <h2 class="text-2xl font-bold text-gray-800 mb-4">Order History</h2>
-              <div class="overflow-x-auto">
-                <table class="min-w-full bg-white text-left border border-gray-200 rounded-lg overflow-hidden">
-                  <thead class="bg-gray-100">
-                    <tr>
-                      <th class="px-4 py-3 border-b">Order ID</th>
-                      <th class="px-4 py-3 border-b">Items</th>
-                      <th class="px-4 py-3 border-b">Total</th>
-                      <th class="px-4 py-3 border-b">Status</th>
-                      <th class="px-4 py-3 border-b">Date</th>
-                    </tr>
-                  </thead>
-                  <tbody class="divide-y">
-                    <tr>
-                      <td class="px-4 py-3">#1023</td>
-                      <td class="px-4 py-3">2x Gamepad, 1x Controller</td>
-                      <td class="px-4 py-3">$85.00</td>
-                      <td class="px-4 py-3 text-green-600 font-medium">Delivered</td>
-                      <td class="px-4 py-3">2025-04-28</td>
-                    </tr>
-                    <tr>
-                      <td class="px-4 py-3">#1022</td>
-                      <td class="px-4 py-3">1x Headset</td>
-                      <td class="px-4 py-3">$45.00</td>
-                      <td class="px-4 py-3 text-yellow-600 font-medium">Pending</td>
-                      <td class="px-4 py-3">2025-04-25</td>
-                    </tr>
-                 
-                  </tbody>
-                </table>
-              </div>
+    <div class="main">
+
+
+      <div class="info shadow-2xl py-10 w-[80%] h-screen flex flex-col  gap-20 mx-auto  mt-20">
+        <div class="ml-120 flex">
+          <img id="profile4" class="w-[150px] h-[140px] object-cover rounded-full mr-10"
+            src="https://t4.ftcdn.net/jpg/06/48/39/19/240_F_648391979_uMz6EwAlKNIJnK9r46UpTiM17nT8GuLl.jpg"
+            alt="profile">
+          <div class="flex flex-col gap-2">
+            <h2 id="user-full-name" class="text-2xl font-bold">John Doe</h2>
+            <span id="role">Client</span>
+            <span id="member-since"><span>Member Since: </span><span>April 1, 2025</span></span>
+            <div>
+              <button class="bg-red-700 text-white px-8 rounded py-3">Update Info</button>
+              <button class="bg-red-700 text-white px-8 rounded py-3">Update Password</button>
             </div>
           </div>
-          
-    </div>
-   </section>
-   </main>
+        </div>
+        <hr class="text-gray-300">
+        <div class="ml-20">
+          <h2 class="mb-4 text-2xl font-bold">Balance: $ <span id="balance">100</span> </h2>
+          <button id="open-modal" class="bg-green-700 text-white px-8 rounded py-3 mb-6">Add Balance</button>
+
+
+
+          <h2 class="text-2xl font-bold">Contact Info</h2>
+          <h3>Email: johndoe@example.com</h3>
+          <span>Phone: 555-123-4567</span><br>
+          <span>Address: 123 Main St, New York, USA</span>
+
+
+          <h2 class="text-2xl font-bold mt-10 mb-3">Order History</h2>
+          <div>
+            <table>
+              <tr class="able-auto border bg-gray-300 border-gray-100">
+                <th class="px-15 py-3">Order ID</th>
+                <th class="px-15">Items</th>
+                <th class="px-15">Total</th>
+                <th class="px-15">Status</th>
+                <th class="px-3">Date</th>
+              </tr>
+              <tr>
+                <td class="px-15 py-3">#1</td>
+                <td class="px-15">Classic Cheeseburger (x2), French Fries (x1)</td>
+                <td class="px-15">$21.47</td>
+                <td class="px-15">Preparing</td>
+                <td class="px-15">April 28, 2025</td>
+
+              </tr>
+
+
+            </table>
+          </div>
+        </div>
+
+      </div> 
+
+        <div id="modal" class="modal modal-hidden ">
+          <div class="modal-content">
+            <h3>Add Balance</h3>
+            <select id="amountSelect">
+              <option value="">Select Amount</option>
+              <option value="50">$50</option>
+              <option value="100">$100</option>
+              <option value="250">$250</option>
+              <option value="500">$500</option>
+              <option value="custom">Custom Amount</option>
+            </select>
+            <input type="number" id="customAmount" placeholder="Enter custom amount" class="hidden" />
+            <button id="addBtn">Add</button>
+          </div>
+        </div>
+      </div>
+  </main>
    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="module" src="/src/main.js"></script>

@@ -4,7 +4,10 @@ import { instance } from "../service/axios-instance";
 
 // Register a new user
 export async function register(newUser) {
+    console.log(newUser)
   try {
+
+
     const response = await instance.post(endpoints.users, newUser);
     return {
       data: response.data,
@@ -21,6 +24,7 @@ export async function register(newUser) {
 // Get all users
 export async function getAllUsers() {
   try {
+
     const response = await instance.get(endpoints.users);
     return {
       data: response.data,
@@ -174,6 +178,7 @@ export async function login(email, password) {
 export async function checkDoublecateUserName(userName) {
   try {
     const response = await instance.get(`${endpoints.users}?username=${userName}`);
+    console.log( "res dat",response)
     return {
       success: response.data.length === 0,
       message: response.data.length > 0 ? 'Username already in use' : 'Username available'

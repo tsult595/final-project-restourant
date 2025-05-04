@@ -77,6 +77,153 @@
         "city": "",
         "street": ""
       }
+    },
+    {
+      "id": "9dd9c139-994a-4ceb-8cc1-f549877ef8d3",
+      "userName": "johndoe",
+      "fullName": "user@example.com",
+      "balance": 0,
+      "email": "dsgdsfsdgsd",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T11:25:03.209Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "20309de6-f597-4292-9e11-eaaa474f69dd",
+      "userName": "johndoe",
+      "fullName": "user@example.com",
+      "balance": 0,
+      "email": "dsvdsds",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T11:31:16.022Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "1b78b4b1-6d55-427e-8eb6-6847371ec005",
+      "userName": "johndoe",
+      "balance": 0,
+      "email": "ddds",
+      "fullName": "user@example.com",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T11:32:22.483Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "5573036b-3de0-4aec-8fac-c2139da4e364",
+      "userName": "johndoe",
+      "balance": 0,
+      "email": "dsdsfds",
+      "fullName": "user@example.com",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T11:37:27.524Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "a7c49427-167b-4e34-99ad-6536d4b8ce4d",
+      "userName": "johndoe",
+      "balance": 0,
+      "email": "user@example.com",
+      "fullName": "scssa",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "aaaaa12",
+      "createdAt": "2025-05-02T11:43:46.887Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "2c6f09de-028d-49fe-b6fa-e56c0cc03ec1",
+      "userName": "johndoe",
+      "balance": 0,
+      "email": "john.doe@example.com",
+      "fullName": "dsdsfds",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T11:53:07.487Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
+    },
+    {
+      "id": "d1f6fc20-f472-4929-b352-82b822e0af18",
+      "userName": "johndoe",
+      "balance": 0,
+      "email": "user@example.com",
+      "fullName": "dfdsfdsfs",
+      "role": "client",
+      "phoneNumber": "",
+      "basketItems": "",
+      "profileImage": "https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg",
+      "isBanned": false,
+      "banDate": null,
+      "password": "admin123",
+      "createdAt": "2025-05-02T12:48:05.832Z",
+      "lastLogin": null,
+      "address": {
+        "country": "",
+        "city": "",
+        "street": ""
+      }
     }
   ],
   "menu": [

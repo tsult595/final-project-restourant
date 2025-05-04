@@ -3,9 +3,12 @@ import { User } from './user-class.js';
 import {
   checkDoublecateUserName,
   checkDoublecateUserEmail,
-  register
+  register,
+  getUserById
+
 } from './users/requests.js';
 
+console.log(getUserById())
 const validator = new JustValidate('#registerForm');
 
 validator
@@ -54,8 +57,8 @@ validator
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
   
-    const { username, email, fullname, password } = data;
-    const newUser = new User(username, email, fullname, password);
+    const { username, fullname,email, password } = data;
+    const newUser = new User(username, fullname,email, password);
   
     
     const response = await register(newUser);

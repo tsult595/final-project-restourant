@@ -1,38 +1,60 @@
 import { Notyf } from "notyf";
 import JustValidate from "just-validate";
-import { getAllUsers } from "./users/requests";
+// import { getAllUsers } from "./users/requests";
 
-const notyf = new Notyf();
+var notyf = new Notyf({
+  duration: 1200,
+  position: {
+    x: 'right',
+    y: 'top',
+  }});
+  const validator = new JustValidate('#form123');
 
-const validator = new JustValidate('#login-form');
+document.addEventListener("DOMContentLoaded", function(){
 
-validator
-  .addField('#email', [
-    { rule: 'required', errorMessage: 'your email' },
-    { rule: 'email', errorMessage: 'incorrect email' },
-  ])
-  .addField('#password', [
-    { rule: 'required', errorMessage: 'Введите пароль' },
-  ])
-  .onSuccess(async (event) => {
-    event.preventDefault();
+  protectUserRoute()
 
-    const form = event.target;
-    const formData = new FormData(form);
-    const { email, password } = Object.fromEntries(formData.entries());
-
-    const response = await getAllUsers();
-    const users = response.data?.data || response.data; 
-
-    const foundUser = users.find(user => user.email === email && user.password === password);
-
-    if (foundUser) {
-      notyf.success('ok!');
-      localStorage.setItem('currentUser', JSON.stringify(foundUser));
-      window.location.href = 'index.html'; 
-    } else {
-      notyf.error('not ok!');
-    }
   });
 
+validator
+.addField('#email', [
+  {
+      rule: 'required',
+    
+    },
+    {
+      rule: 'email'
+  }
+])
+.addField("#password", [
+  {
+      rule: 'required',
+    
+    },
+    
+])
+.onSuccess(async(event)=>{
+const form=event.target;
+const formData = new FormData (form);
+const {email, password} =Object.fromEntries(formData.entries());
 
+const response = await login(email, password)
+if(response.data){
+  notyf.success({
+      message: response.message,
+  });
+ 
+  setUser(response.data.id)
+  setTimeout(()=>{
+      window.location.replace("./profile.html")
+  },1200)
+}
+else{
+  notyf.error({
+      message: response.message,
+  })
+}
+
+}).onFail(()=>{})
+
+ 
