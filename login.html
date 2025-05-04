@@ -1,84 +1,85 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
-    <!-- favocon -->
-    
-    <link rel="icon" type="favicon" href="./public/favicon.ico" />
-    <!-- google font -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+    <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+    <link rel="stylesheet" href="./src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Restaurant Home</title>
-  </head>
-  <body>
-   <header class="w-[100%] bg-red-800 h-[120px] flex justify-between">
-    <div class="container w-[80%] m-auto">
-      <div class="headerWrapper flex justify-between items-center text-white">
-       <div class="logo">
-        <a href="./index.html">
-          <img class="w-[50px] h-[50px]" src="./public/restoran-duzgun.gif" alt="">
-        </a>
-       </div>
-       <div class="headerMenu flex text-2xl gap-4">
-        <a href="index.html">
-          <ion-icon title="home" name="home-outline"></ion-icon>
-        </a>
-        <a href="./menu.html">
-          <ion-icon title="menu" name="fast-food-outline"></ion-icon>
-        </a>
-        <a href="./about.html">
-          <ion-icon title="about" name="restaurant-outline"></ion-icon>
-        </a>
-        <a href="./contact.html">
-          <ion-icon title="contact" name="call-outline"></ion-icon>
-        </a>
-        <a href="./login.html">
-          <ion-icon title="log-In" name="log-in-outline"></ion-icon>
-        </a>
-        <a href="./register.html">
-          <ion-icon title="Register" name="person-add-outline"></ion-icon>
-        </a>
-       </div>
-      </div>
-    </div>
-   </header>
-   <main>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title> Restaurant | Login</title>
+</head>
+
+<body>
+    <header class="flex items-center justify-between bg-amber-950 px-15 text-white w-full h-[80px]">
+
+        <div class="logo">
+            <a href="index.html">
+                <img width="50" height="50" class="rounded-4xl"
+                    src="./public/modele-logo-entreprise-aliments-boissons_1286368-98172.avif" alt="logo" title="logo">
+            </a>
+
+        </div>
+
+        <nav class="hidden md:flex text-2xl gap-5">
+            <a class="hover:scale-90 transition" title="home" href="./index.html"><ion-icon
+                    name="home-outline"></ion-icon></a>
+            <a class="hover:scale-90 transition" title="menu" href="./menu.html"><ion-icon
+                    name="fast-food-outline"></ion-icon></a>
+            <a class="hover:scale-90 transition" title="about" href="./about.html"><ion-icon
+                    name="restaurant-outline"></ion-icon></a>
+            <a class="hover:scale-90 transition" title="contact" href="./contact.html"><ion-icon
+                    name="call-outline"></ion-icon></a>
+            <a class="hover:scale-90 transition" title="login" href="./login.html"><ion-icon
+                    name="log-in-outline"></ion-icon></a>
+            <a class="hover:scale-90 transition" title="register" href="./register.html"><ion-icon
+                    name="person-add-outline"></ion-icon></a>
+        </nav>
+        <div class="mobile-menu flex md:hidden">
+
+            <ion-icon class="text-2xl hover:scale-90 transition" name="menu-outline"></ion-icon>
+        </div>
+
+    </header>
     <main class="relative">
 
-      <form id="form123"  class=" absolute left-145 top-30 w-full max-w-xl  bg-white shadow-xl rounded-lg p-2">
+        <form id="form123"  class=" absolute left-145 top-30 w-full max-w-xl  bg-white shadow-xl rounded-lg p-2">
 
-          <h2 class="text-4xl text-red-800 text-center font-bold mt-10"> Login to Your Account</h2>
+            <h2 class="text-4xl text-red-800 text-center font-bold mt-10"> Login to Your Account</h2>
 
-          <p class="text-center text-2xl pt-8 text-gray-800">Please enter your credentials to continue.</p>
+            <p class="text-center text-2xl pt-8 text-gray-800">Please enter your credentials to continue.</p>
 
-          <div class="flex flex-col">
-              <label for="email"
-                  class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Email</label>
-              <input type="email" id="email" name="email"
-                  class="bg-gray-50 border w-full text-md text-blue-950 border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Enter your email" required />
-          </div>
-          <div class=" flex flex-col">
-              <label for="password" class=" mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Password</label>
-              <input type="password" id="password" name="password"
-                  class="bg-gray-50 border pr-50 text-md text-blue-950 border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Enter your your password" required />
-              <span class="text-md text-red-700 ml-105 mt-5">Forgot Password?</span>
-          </div>
-          <button type="submit"
-              class="text-white  mb-10 mt-7 ml-60 bg-red-900 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-9 py-3 text-center">Login</button>
-          <span class="absolute left-35 bottom-2">Don't have an account? <span class="text-red-600">Create one
-                  now</span></span>
-      </form>
+            <div class="flex flex-col">
+                <label for="email"
+                    class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Email</label>
+                <input type="email" id="email" name="email"
+                    class="bg-gray-50 border w-full text-md text-blue-950 border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Enter your email" required />
+            </div>
+            <div class=" flex flex-col">
+                <label for="password" class=" mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Password</label>
+                <input type="password" id="password" name="password"
+                    class="bg-gray-50 border pr-50 text-md text-blue-950 border-gray-300  rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    placeholder="Enter your your password" required />
+                <span class="text-md text-red-700 ml-105 mt-5">Forgot Password?</span>
+            </div>
+            <button type="submit"
+                class="text-white  mb-10 mt-7 ml-60 bg-red-900 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-9 py-3 text-center">Login</button>
+            <span class="absolute left-35 bottom-2">Don't have an account? <span class="text-red-600">Create one
+                    now</span></span>
+        </form>
 
-      </div>
-  </main>
-   </main>
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="./src/login.js"></script>
-  </body>
+        </div>
+    </main>
+    <script type="module" src="./src/pages/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
 </html>

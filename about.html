@@ -1,52 +1,106 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- favocon -->
-    
-    <link rel="icon" type="favicon" href="./public/favicon.ico" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Restaurant Home</title>
-  </head>
-  <body>
-   <header class="w-[100%] bg-red-800 h-[120px] flex justify-between">
-    <div class="container w-[80%] m-auto">
-      <div class="headerWrapper flex justify-between items-center text-white">
-       <div class="logo">
-        <a href="./index.html">
-          <img class="w-[50px] h-[50px]" src="./public/restoran-duzgun.gif" alt="">
-        </a>
-       </div>
-       <div class="headerMenu flex text-2xl gap-4">
-        <a href="index.html">
-          <ion-icon title="home" name="home-outline"></ion-icon>
-        </a>
-        <a href="./menu.html">
-          <ion-icon title="menu" name="fast-food-outline"></ion-icon>
-        </a>
-        <a href="./about.html">
-          <ion-icon title="about" name="restaurant-outline"></ion-icon>
-        </a>
-        <a href="./contact.html">
-          <ion-icon title="contact" name="call-outline"></ion-icon>
-        </a>
-        <a href="./login.html">
-          <ion-icon title="log-In" name="log-in-outline"></ion-icon>
-        </a>
-        <a href="./register.html">
-          <ion-icon title="Register" name="person-add-outline"></ion-icon>
-        </a>
-       </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title> Restaurant | About</title>
+</head>
+
+<body>
+  <header class="flex items-center justify-between bg-amber-950 px-15 text-white w-full h-[80px]">
+
+    <div class="logo">
+      <a href="index.html">
+        <img width="50" height="50" class="rounded-4xl"
+          src="./public/modele-logo-entreprise-aliments-boissons_1286368-98172.avif" alt="logo" title="logo">
+      </a>
+
     </div>
-   </header>
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+    <nav class="hidden md:flex text-2xl gap-5">
+      <a class="hover:scale-90 transition" title="home" href="./index.html"><ion-icon
+          name="home-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="menu" href="./menu.html"><ion-icon
+          name="fast-food-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="about" href="./about.html"><ion-icon
+          name="restaurant-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="contact" href="./contact.html"><ion-icon
+          name="call-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="login" href="./login.html"><ion-icon
+          name="log-in-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="register" href="./register.html"><ion-icon
+          name="person-add-outline"></ion-icon></a>
+    </nav>
+    <div class="mobile-menu flex md:hidden">
+
+      <ion-icon class="text-2xl hover:scale-90 transition" name="menu-outline"></ion-icon>
+    </div>
+
+
+  </header>
+  <main>
+    <h2 class="text-4xl text-center font-bold mt-20">Our Story</h2>
+
+    <div class="flex mt-15 ml-40 mr-30 ">
+      <p class="text-2xl mr-30 text-gray-700">Welcome to our restaurant — a place where culinary passion meets warm
+        hospitality. Located in the heart of the city, we offer a unique dining experience that combines delicious,
+        freshly prepared meals with a cozy, inviting atmosphere.
+
+        Our chefs use only the finest ingredients to craft a menu that celebrates both local and international flavors.
+        Whether you're here for a casual lunch, a romantic dinner, or a special occasion, our attentive staff is
+        dedicated to making your visit memorable.
+
+
+        Come for the food, stay for the experience — we look forward to serving you.At our restaurant, food is more than
+        a meal — it’s a story told through flavor, tradition, and creativity. From the moment you walk through our
+        doors, you're welcomed like family and treated to an atmosphere filled with warmth, laughter, and the rich aroma
+        of carefully crafted dishes.
+
+        We believe in slow cooking, bold flavors, and unforgettable moments. Our chefs take pride in preparing each
+        plate with passion, using fresh ingredients and time-honored techniques. Whether you're celebrating a milestone
+        or simply enjoying a quiet evening out, we're here to make every bite special.
+
+        Thank you for choosing us — your table is ready.</p>
+
+      <img class="w-[full] h-[full] rounded-2xl"
+        src="https://t3.ftcdn.net/jpg/07/13/61/26/360_F_713612649_qFxwTtQ6cr2gMbJ5n14Z8bMbe55cP28S.jpg" alt="">
+
+    </div>
+    <div class="bg-red-800 mt-50 pb-20 ml-30 mr-30 ">
+      <h2 class="text-3xl text-center text-white font-bold pt-10 mt-40 mb-10">Our Mission</h2>
+
+      <p class="text-gray-300 text-xl pl-60 pr-60 text-center">Our mission is to create memorable dining experiences by
+        combining exceptional food, heartfelt hospitality, and a welcoming atmosphere.
+        We are committed to using the freshest ingredients, supporting local producers, and delivering excellence in
+        every dish we serve.
+
+        More than just a place to eat, our restaurant is a space where people connect, celebrate, and feel at home.
+        Every guest is part of our story — and we strive to make each visit unforgettable.
+        At the heart of our mission is a simple idea: to bring people together through the joy of great food and genuine
+        connection.
+        We strive to craft dishes that not only satisfy the palate but also tell a story — one rooted in passion,
+        culture, and care.
+
+        Every plate we serve is a reflection of our commitment to quality, creativity, and hospitality. Whether it’s
+        your first visit or your hundredth, our goal is to make you feel seen, appreciated, and at home.
+
+        We’re not just feeding guests — we’re building a community around the table.
+        We aim to redefine the dining experience by offering food that excites, service that delights, and an atmosphere
+        that inspires.
+
+      </p>
+    </div>
+  </main>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>

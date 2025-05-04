@@ -1,5 +1,5 @@
-import { getUser } from "../store/userStore";
-import { logout } from "../store/userStore";
+import { getUser } from "../store/userStore.js";
+import { logout } from "../store/userStore.js";
 import { Notyf } from "notyf";
 
 var notyf = new Notyf({

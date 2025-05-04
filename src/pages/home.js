@@ -1,7 +1,7 @@
-import { renderHeader } from "./render-header";
+import { renderHeader } from "../helpers/render-header";
 import JustValidate from 'just-validate';
 import { Notyf } from 'notyf';
-import { Reservation } from "./reservation-class";
+import { Reservation } from "../classes/reservation.class.js";
 import { makeReservation } from "../services/reservations/requests";
 
 

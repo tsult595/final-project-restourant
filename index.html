@@ -1,61 +1,114 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- favocon -->
-    
-    <link rel="icon" type="favicon" href="./public/favicon.ico" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Courgette&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nothing+You+Could+Do&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <title>Restaurant Home</title>
-  </head>
-  <body>
-   <header class="w-[100%] bg-red-800 h-[120px] flex justify-between">
-    <div class="container w-[80%] m-auto">
-      <div class="headerWrapper flex justify-between items-center text-white">
-       <div class="logo"> 
-        <a href="./index.html">
-          <img class="w-[50px] h-[50px]" src="./public/restoran-duzgun.gif" alt="">
-        </a>
-       </div>
-       <div class="headerMenu flex text-2xl gap-4">
-        <a href="./home.html">
-          <ion-icon title="home" name="home-outline"></ion-icon>
-        </a>
-        <a href="./menu.html">
-          <ion-icon title="menu" name="fast-food-outline"></ion-icon>
-        </a>
-        <a href="./about.html">
-          <ion-icon title="about" name="restaurant-outline"></ion-icon>
-        </a>
-        <a href="./contact.html">
-          <ion-icon title="contact" name="call-outline"></ion-icon>
-        </a>
-        <a href="./login.html">
-          <ion-icon title="log-In" name="log-in-outline"></ion-icon>
-        </a>
-        <a href="./register.html">
-          <ion-icon title="Register" name="person-add-outline"></ion-icon>
-        </a>
-       </div>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+  <link rel="icon" type="image/x-icon" href="./public/favicon.ico">
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title> Restaurant | Home</title>
+</head>
+
+<body>
+  <header class="flex items-center justify-between bg-amber-950 px-15 text-white w-full h-[80px]">
+
+    <div class="logo">
+      <a href="index.html">
+        <img width="50" height="50" class="rounded-4xl"
+          src="./public/modele-logo-entreprise-aliments-boissons_1286368-98172.avif" alt="logo" title="logo">
+      </a>
+
     </div>
-   </header>
-   <main>
-    <section class="w-full h-[calc(100vh-120px)] bg-cover bg-center" style="background-image: url('./public/image.jpg');">
-      <div class="innerText flex flex-col py-[15%] ">
-        <h1 class="text-amber-50 text-7xl text-center mb-5">Welcome to our Restourant</h1>
-        <h2 class="text-white text-5xl text-center mb-5">Unforgettable dining awaits you</h2>
-        <a class="bg-amber-500 w-[10%] m-auto text-center h-[40px] rounded-2xl" href="">Make Reservation</a>
+
+    <nav id="header-nav" class="hidden md:flex text-2xl gap-5">
+      <!-- <a class="hover:scale-90 transition" title="home" href="./index.html"><ion-icon
+          name="home-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="menu" href="./menu.html"><ion-icon
+          name="fast-food-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="about" href="./about.html"><ion-icon
+          name="restaurant-outline"></ion-icon></a>
+      <a class="hover:scale-90 transition" title="contact" href="./contact.html"><ion-icon
+          name="call-outline"></ion-icon></a>
+      <a id="login-link" class="hover:scale-90 transition" title="login" href="./login.html"><ion-icon
+          name="log-in-outline"></ion-icon></a>
+      <a id="register-link" class="hover:scale-90 transition" title="register" href="./register.html"><ion-icon
+          name="person-add-outline"></ion-icon></a> -->
+    </nav>
+    <div class="mobile-menu flex md:hidden">
+
+      <ion-icon class="text-2xl hover:scale-90 transition" name="menu-outline"></ion-icon>
+    </div>
+
+
+  </header>
+  <main class="relative h-screen">
+    <img class="absolute inset-0 w-full h-full object-cover"
+      src="https://www.tinbuilding.com/wp-content/uploads/2024/09/download-6-scaled-920x518.webp" alt="">
+
+    <div class="absolute inset-0 bg-black/60"></div>
+    <div class="relative flex flex-col items-center justify-center h-full text-white text-center px-4">
+      <h1 class="text-6xl font-bold pb-6">Welcome to Our Restaurant</h1>
+      <p class="text-2xl mb-6">An unforgettable dining experience awaits you. Book your table today!</p>
+      <button class="bg-red-900 text-white font-semibold px-5 py-3 rounded hover:bg-red-700 transition">
+        Make a Reservation
+      </button>
+    </div>
+  </main>
+  <div class="reservations relative mx-auto">
+    <h2 class="text-3xl text-center font-bold mt-20">Make a Reservation</h2>
+
+    <div class="min-h-screen absolute left-150 top-30 px-1">
+
+      <form id="reservation-form" class="w-full relative  max-w-6xl bg-white shadow rounded-lg p-2">
+        <div class="mb-1 flex flex-col md:flex-row md:space-x-4">
+
+       <div  class=" flex flex-col"><label for="fullname" class=" mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Full Name</label>
+        <input type="text" id="fullname" name="fullname"
+          class="bg-gray-50 border  text-md text-blue-950 border-gray-300 w-60 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Enter your full name" required />
+          </div>
+          <div class="flex flex-col">
+          <label for="phone" class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Phone number</label>
+          <input type="number" id="phone" name="phone"
+            class="bg-gray-50 border  text-md text-blue-950 border-gray-300 w-60 rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            placeholder="Enter your phone number" required />
+            </div>
       </div>
-    </section>
-   </main>
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+      
+      <div class="mb-3">
+        <label for="guest" class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Guest Count</label>
+        <input type="number" id="guest" name="guest"
+          class="bg-gray-50 border  text-md text-blue-950 border-gray-300 w-full rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          placeholder="Number of guests" required />
+      </div>
+      <div class="mb-3">
+        <label for="time" class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Reservation Time</label>
+        <input  type="datetime-local" id="time" name="time"
+          class="bg-gray-50 border  text-md text-blue-950 border-gray-300 w-full rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-blue-500 dark:focus:border-blue-500 "
+          required />
+      </div>
+      <div class="mb-3">
+        <label for="textarea" class="block mb-2 text-md font-medium text-gray-900 pt-6 dark:text-black">Guest Notes
+          (Optional)</label>
+          <textarea id="textarea" name="textarea" rows="4" cols="50" class="sbg-gray-50 border  text-md text-blue-950 border-gray-300 w-full rounded-lg focus:ring-red-500 focus:border-red-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-red-500 dark:focus:border-red-500"  placeholder="Any special requests?"  ></textarea>
+    
+      </div>
+      <button type="submit" id="submit-button"
+        class="text-white  absolute left-46 bg-red-900 hover:bg-red-700 focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center">Submit
+        Reservation</button>
+    </form>
+    </div>
+
+  </div>
+    
+  <script type="module" src="./src/pages/home.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

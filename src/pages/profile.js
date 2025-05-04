@@ -1,4 +1,4 @@
-import { getUser } from "../store/userStore";
+import { getUser } from "../store/userStore.js";
 import moment from 'moment';
 
 
@@ -59,3 +59,7 @@ alert('Please enter a valid amount.');
 }
 });
 })
+
+
+
+
