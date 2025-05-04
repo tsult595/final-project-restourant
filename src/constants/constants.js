@@ -1,4 +1,4 @@
-export let API_BASE_URL = 'http://localhost:3055'
+export let API_BASE_URL = 'http://localhost:3021'
 export let endpoints = {
     users : '/users',
     menu : '/menu',

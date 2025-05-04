@@ -45,3 +45,49 @@ c:\Users\LENOVO\Desktop\Restaurant\menu-detail.html<!doctype html>
 
 
   </header>
+  <main>
+    <div class="flex mt-20 ml-70">
+      <img id="image" class=" w-125 h-130"
+        src="https://feelgoodfoodie.net/wp-content/uploads/2020/04/Caesar-Salad-TIMG.jpg" alt="">
+      <div class="datails flex flex-col ml-10 gap-5">
+        <h2 id="title" class="font-bold text-5xl">Caesar Salad</h2>
+        <span class="text-2xl"> <span id="category">Starter</span> <span id="country">- Mexico</span></span>
+        <div class="span">
+          <span class="text-red-700 text-2xl">$ <span id="price">7.99</span></span>
+          <span class="text-2xl text-gray-600  "> Preparation time: <span id="preparation">8 minutes</span></span>
+        </div>
+        <ul id="ingredients" class="text-3xl font-semibold">Ingredients:
+          <!-- <li class="text-gray-600  text-2xl">romaine lettuce</li>  -->
+          <!-- <li class="text-gray-600 text-2xl">croutons</li>
+                    <li class="text-gray-600  text-2xl">parmesan</li>
+                    <li class="text-gray-600  text-2xl">caesar dressing</li> -->
+        </ul>
+        <button class="bg-red-800 text-white mt-5 w-60 rounded px-2 py-4">Add to Basket</button>
+      </div>
+    </div>
+    <div class="mt-20 ml-60">
+      <h2 class="font-bold text-4xl mb-3 ml-10">Customer Reviews</h2>
+      <div id="reviews" class="mt-4 flex flex-col gap-4">
+        <!-- <img class="w-[100px] rounded-4xl"
+          src="https://marketplace.canva.com/EAGNFdAoW90/3/0/1600w/canva-green-gradient-minimalist-business-linkedin-profile-picture-y3nJhl_19a8.jpg"
+          alt="image">
+        <div class="w-full">
+          <span class="w-full text-2xl pt-3" name="comment" id="comment">
+   John Doe
+   "Delicious pizza! The crust was perfect, and the toppings were so fresh. Highly recommend!
+          </span> -->
+
+      <!-- </div> -->
+    </div>
+
+    <form class="mb-3 ml-10" id="add-review">
+      <label for="textarea" class="block mb-2 text-2xl font-medium text-gray-900 pt-6 dark:text-black">Add Your
+        Review</label>
+      <textarea id="review-message" name="textarea" rows="4" cols="50"
+        class="sbg-gray-50 border w-[70%] text-md text-blue-950 border-gray-300 rounded-lg focus:ring-red-500 focus:border-red-500 block p-2.5 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:focus:ring-red-500 dark:focus:border-red-500"
+        placeholder="Write your review..."></textarea>
+        <button type="submit" class="bg-red-800 text-white mt-5 ml-10 mb-10 w-60 rounded px-2 py-4">Submit Review</button>
+    </form>
+ 
+    </div>
+  </main>

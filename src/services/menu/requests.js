@@ -1,5 +1,5 @@
 import { endpoints } from "../../constants/constants";
-import { instance } from "../axios-instance";
+import { instance } from "../axiosInstance";
 
 export async function getAllMenu(){
     try {
